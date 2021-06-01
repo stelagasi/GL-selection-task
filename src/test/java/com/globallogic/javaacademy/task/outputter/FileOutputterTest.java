@@ -16,8 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class FileOutputterTest {
 
-    private final Path path = Path.of("src/main/resources/out.txt");
-    private final FileOutputter fileOutputter = new FileOutputter(path);
+    private final static Path PATH = Path.of("src/main/resources/out.txt");
+    private final FileOutputter fileOutputter = new FileOutputter(PATH);
 
     @Test
     void output_whenResultIsNull_thenThrowException() {
@@ -43,6 +43,6 @@ class FileOutputterTest {
                 "{(a, b), 3} = 0,17 (3/18)",
                 "{(a, b), 4} = 0,17 (3/18)",
                 "TOTAL Frequency: 0,75 (18/24)"),
-                Files.readAllLines(path));
+                Files.readAllLines(PATH));
     }
 }
