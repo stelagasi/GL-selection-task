@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class FileOutputterTest {
 
-    private final static Path PATH = Path.of("src/main/resources/out.txt");
+    private final static Path PATH = Path.of("./out.txt");
     private final FileOutputter fileOutputter = new FileOutputter(PATH);
 
     @Test

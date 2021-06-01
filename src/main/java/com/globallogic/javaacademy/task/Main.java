@@ -20,7 +20,7 @@ public class Main {
 
     public static final Set<Character> CHARS_TO_CALCULATE = Set.of('l', 'o', 'g', 'i', 'c');
     public static final Set<Character> SPECIAL_CHARS = Set.of('!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', ' ');
-    public static final Path OUTPUT_PATH = Path.of("src/main/resources/out.txt");
+    public static final Path OUTPUT_PATH = Path.of("./out.txt");
 
     //    public static final InputHandler stringHandler = new StringHandler(SPECIAL_CHARS);
     public static final InputHandler stringParser = new StringParser(SPECIAL_CHARS);
