@@ -2,7 +2,7 @@ package com.globallogic.javaacademy.task.calculator;
 
 import java.util.*;
 
-import static java.util.Objects.*;
+import static java.util.Objects.requireNonNull;
 import static java.util.stream.Collectors.toList;
 
 public record FrequencyCalculator(Set<Character> wantedChars) {

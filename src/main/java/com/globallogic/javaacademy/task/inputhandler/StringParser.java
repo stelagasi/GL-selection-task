@@ -6,7 +6,7 @@ import java.util.Set;
 import static java.util.Locale.ROOT;
 import static java.util.Objects.requireNonNull;
 
-public class StringParser implements InputHandler{
+public class StringParser implements InputHandler {
 
     private static final Set<Character> SEPARATORS = Set.of('\n', '\t', ' ');
 
@@ -25,11 +25,11 @@ public class StringParser implements InputHandler{
 
         builder.setLength(0);
 
-        for (char c : line.toCharArray()){
-            if(SEPARATORS.contains(c) && !builder.isEmpty()){
+        for (char c : line.toCharArray()) {
+            if (SEPARATORS.contains(c) && !builder.isEmpty()) {
                 words.add(builder.toString().toLowerCase(ROOT));
                 builder.setLength(0);
-            } else if (!specialChars.contains(c)){
+            } else if (!specialChars.contains(c)) {
                 builder.append(c);
             }
         }
